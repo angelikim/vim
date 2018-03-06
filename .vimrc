@@ -2,7 +2,6 @@
 "Useful
 "]] goes to start of the function the cursor is in
 
-"highlight column when cursor above
 :color torte
 
 " Highlight all instances of word under cursor, when idle.
