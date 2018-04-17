@@ -2,6 +2,22 @@
 "Useful
 "]] goes to start of the function the cursor is in
 
+"Initializing pathogen plugins
+execute pathogen#infect()
+execute pathogen#helptags() 
+
+"python-jedi settings
+let g:jedi#use_tabs_not_buffers = 1
+let g:jedi#use_splits_not_buffers = "bottom"
+
+"In order for jedi-vim to load documentation etc,
+"the correct python version for the script should be used.
+"default load python3
+"to change python version on vim load: vim --cmd 'let py2 = 1'
+if exists('py2') && has('python')
+elseif has('python3')
+endif
+
 :color torte
 
 " Highlight all instances of word under cursor, when idle.
